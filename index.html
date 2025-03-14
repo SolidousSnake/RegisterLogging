@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход / Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="authContainer">
+    <button onclick="showForm('register')">Регистрация</button>
+    <button onclick="showForm('login')">Войти</button>
+</div>
+
+<div class="container" id="formContainer" style="display: none;">
+    <h2 id="formTitle"></h2>
+    <input type="text" id="username" placeholder="Логин">
+    <input type="password" id="password" placeholder="Пароль">
+    <input type="password" id="confirmPassword" placeholder="Повторите пароль" style="display: none;">
+    <button onclick="submitForm()">Отправить</button>
+    <p class="message" id="message"></p>
+</div>
+
+<div class="welcome" id="welcomePanel" style="display: none;">
+    <h2 id="welcomeMessage"></h2>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
